@@ -1,18 +1,15 @@
 pipeline {
     agent any
-    tools{
-maven 'maven3.6.1'
-}
 
     stages {
         stage('git clone') {
             steps {
-               git 'https://github.com/Kumarbgm16/java-azure-project.git'
+                git 'https://github.com/coderepo2891/java-azure-project-forked.git'
             }
         }
-        stage('maven package') {
+         stage('mvn package') {
             steps {
-               sh 'mvn clean package'
+                sh 'mvn clean package'
             }
         }
     }
