@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage('git clone CHECK') {
+        stage('git clone CHECK NOW') {
             steps {
                 git 'https://github.com/coderepo2891/java-azure-project-forked.git'
             }
